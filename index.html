@@ -295,6 +295,10 @@ h3.sub{font-size:18px;font-weight:500;letter-spacing:-.015em;margin-top:30px;}
 .ad-note{font-size:13.5px;color:var(--ink-2);padding:10px 12px;border-radius:10px;background:#FFF4E0;border-left:3px solid #F5A623;}
 @media (max-width:720px){.ads{grid-template-columns:1fr;}.ad-embed{height:540px;}}
 @media print{.ad{break-inside:avoid;}}
+
+.scens{display:grid;gap:16px;margin-top:24px;}
+.scen .label{margin-bottom:-8px;}
+.rtable td small{font-size:11px;color:var(--muted);font-weight:500;margin-left:4px;}
 </style>
 </head>
 <body>
@@ -308,7 +312,7 @@ h3.sub{font-size:18px;font-weight:500;letter-spacing:-.015em;margin-top:30px;}
   <div class="title">
     <p class="label"><span class="dot"></span>Tienda Shopify · Promiseland</p>
     <h1>La tienda de Promiseland, <b>lista para revisar</b></h1>
-    <p class="lede">Terminamos el sitio: fichas de producto con packs, el Surtido del Magiverso con descuento por cantidad, sugerencias en el carrito, recetas rediseñadas y un checkout con la marca y en español. Aquí está cada parte y los tres pasos que necesitamos de ustedes para lanzar.</p>
+    <p class="lede">Terminamos el sitio: fichas de producto con packs, el Surtido del Magiverso con descuento por cantidad, sugerencias en el carrito, recetas rediseñadas y un checkout con la marca y en español. Aquí está cada parte, los tres pasos que necesitamos de ustedes para lanzar y escenarios de venta con pauta.</p>
     <div class="pills">
       <span class="pill"><span class="dot"></span>18 productos con precio y costo</span>
       <span class="pill"><span class="dot"></span>Packs x3 · x5 · x10</span>
@@ -453,9 +457,45 @@ h3.sub{font-size:18px;font-weight:500;letter-spacing:-.015em;margin-top:30px;}
   </section>
 
 
+  <!-- ESCENARIOS -->
+  <section>
+    <p class="label">08 · Escenarios de venta</p>
+    <h2>Cuánto les queda <b>según lo que se venda</b></h2>
+    <p>Tres niveles de venta mensual, invirtiendo entre el <strong>20% y el 30% de la venta neta en pauta</strong>. LA REAL cobra el <strong>10% de la venta neta</strong> (+IVA). El costo del producto sale de la hoja de precios: en promedio es el 32% del precio de venta sin IVA.</p>
+    <div class="scens">
+      <div class="scen">
+        <p class="label">Venta neta de $10 millones al mes</p>
+        <div class="rtable-wrap"><table class="rtable">
+          <thead><tr><th></th><th class="num">Pauta 20%</th><th class="num">Pauta 30%</th></tr></thead>
+          <tbody><tr><td>Venta neta (sin IVA)</td><td class="num">$10.000.000</td><td class="num">$10.000.000</td></tr><tr><td>Costo del producto (32%)</td><td class="num">−$3.200.000</td><td class="num">−$3.200.000</td></tr><tr><td>Pauta</td><td class="num">−$2.000.000</td><td class="num">−$3.000.000</td></tr><tr><td>LA REAL (10%)</td><td class="num">−$1.000.000</td><td class="num">−$1.000.000</td></tr><tr class="total"><td>Les queda</td><td class="num">$3.800.000 <small>38%</small></td><td class="num">$2.800.000 <small>28%</small></td></tr></tbody>
+        </table></div>
+      </div>
+      <div class="scen">
+        <p class="label">Venta neta de $25 millones al mes</p>
+        <div class="rtable-wrap"><table class="rtable">
+          <thead><tr><th></th><th class="num">Pauta 20%</th><th class="num">Pauta 30%</th></tr></thead>
+          <tbody><tr><td>Venta neta (sin IVA)</td><td class="num">$25.000.000</td><td class="num">$25.000.000</td></tr><tr><td>Costo del producto (32%)</td><td class="num">−$8.000.000</td><td class="num">−$8.000.000</td></tr><tr><td>Pauta</td><td class="num">−$5.000.000</td><td class="num">−$7.500.000</td></tr><tr><td>LA REAL (10%)</td><td class="num">−$2.500.000</td><td class="num">−$2.500.000</td></tr><tr class="total"><td>Les queda</td><td class="num">$9.500.000 <small>38%</small></td><td class="num">$7.000.000 <small>28%</small></td></tr></tbody>
+        </table></div>
+      </div>
+      <div class="scen">
+        <p class="label">Venta neta de $50 millones al mes</p>
+        <div class="rtable-wrap"><table class="rtable">
+          <thead><tr><th></th><th class="num">Pauta 20%</th><th class="num">Pauta 30%</th></tr></thead>
+          <tbody><tr><td>Venta neta (sin IVA)</td><td class="num">$50.000.000</td><td class="num">$50.000.000</td></tr><tr><td>Costo del producto (32%)</td><td class="num">−$16.000.000</td><td class="num">−$16.000.000</td></tr><tr><td>Pauta</td><td class="num">−$10.000.000</td><td class="num">−$15.000.000</td></tr><tr><td>LA REAL (10%)</td><td class="num">−$5.000.000</td><td class="num">−$5.000.000</td></tr><tr class="total"><td>Les queda</td><td class="num">$19.000.000 <small>38%</small></td><td class="num">$14.000.000 <small>28%</small></td></tr></tbody>
+        </table></div>
+      </div>
+    </div>
+    <div class="tiers">
+      <div class="tier"><b>×5</b><span>Con pauta del 20%, cada $1 en anuncios debe traer $5 de venta neta.</span></div>
+      <div class="tier"><b>×3,3</b><span>Con pauta del 30%, cada $1 en anuncios debe traer $3,3 de venta neta.</span></div>
+      <div class="tier"><b>38–28%</b><span>Lo que queda de cada venta para envíos, pagos y la operación de la marca.</span></div>
+    </div>
+    <p class="note"><strong>No incluye</strong> el costo de envío, la comisión de la pasarela de pagos, el fulfillment (según la hoja de condiciones, unos $3.250 por pedido entre alistamiento, caja S, etiqueta y hoja impresa, más $89.250 al mes por posición de almacenamiento) ni los gastos fijos de la marca. El 32% de costo es a precio lleno: si en promedio se vende con 10% de descuento (packs y Surtido), el costo del producto sube a cerca del 35,5% de la venta neta.</p>
+  </section>
+
   <!-- PIEZAS -->
   <section id="piezas">
-    <p class="label">08 · Contenidos para pauta</p>
+    <p class="label">09 · Contenidos para pauta</p>
     <h2>16 piezas para <b>aprobar</b></h2>
     <p>Son publicaciones de Instagram que queremos usar como anuncios. Para responder, basta con el número: <strong>aprobada</strong>, <strong>aprobada con ajustes</strong> (y cuáles) o <strong>no usar</strong>. En algunas dejamos una nota con lo que conviene revisar antes de pautarlas.</p>
     <div class="ads">
